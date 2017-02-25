@@ -1,9 +1,14 @@
-<style>
+
     body{
       font-family: sans-serif;
+      margin: 0;
+    }
+    img{
+
     }
     ul{
       font-size: 2em;
+      margin: 0;
     }
     .white{
       color: #fff;
@@ -11,4 +16,25 @@
     #yellow{
       color: yellow;
     }
-</style>
+    li{
+      display: inline;
+      margin-right: 0.75em;
+    }
+    .container{
+      width: 90%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    section{
+      padding-top: 0.75em;
+      margin: 1em;
+    }
+    nav{
+      background-color: maroon;
+    }
+    footer{
+
+    }
+    footer li: last-child{
+      background-color: gray;
+    }
