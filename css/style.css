@@ -1,24 +1,28 @@
-
+    h1{
+      color: white;
+    }
+    h2{
+      color: white;
+    }
     body{
       font-family: sans-serif;
       margin: 0;
+      background-color: maroon;
+      padding: 10px;
     }
-    img{
-
+    .white{
+      color: white;
+    }
+    #primary{
+      color: yellow;
+      background-color: black;
     }
     ul{
       font-size: 2em;
-      margin: 0;
-    }
-    .white{
-      color: #fff;
-    }
-    #yellow{
-      color: yellow;
     }
     li{
       display: inline;
-      margin-right: 0.75em;
+      margin-right: 2em;
     }
     .container{
       width: 90%;
@@ -28,12 +32,15 @@
     section{
       padding-top: 0.75em;
       margin: 1em;
+      color: white;
+      font-family: serif;
+      font-size: 1.25em;
     }
     nav{
-      background-color: maroon;
+      background-color: white;
     }
     footer{
-
+      color: white;
     }
     footer li: last-child{
       background-color: gray;
