@@ -68,7 +68,7 @@ table {
     }
     .white{
       color: white;
-      font-size: 1.5em;
+      font-size: 3.5em;
     }
     #menu li{
     align: center;
@@ -89,14 +89,8 @@ table {
       max-width: 760px;
       margin: 0 auto;
     }
-    section{
-      padding-top: 0.75em;
-      margin: 1em;
-      color: white;
-      font-family: serif;
-      font-size: 1.25em;
-    }
-    div.container{
+
+    div .container{
       padding-top: 3em;
     }
     nav{
@@ -104,16 +98,18 @@ table {
       width: 100%;
       top: 1em;
       margin: 0;
+
       }
-    }
+    /*DROPDOWN SECTION..........................*/
     .dropdown{
-      position: relative;
+      position: absolute;
     }
     .dropdown li{
       display: list-item;
+			font-size: 30px;
     }
     .dropdown > ul{
-      position: absolute;
+
       top: 1em;
       left: 0;
       height: 0;
@@ -122,10 +118,39 @@ table {
       transition: all 0.3s ease;
       background-color: yellow;
     }
-    .dropdown:hover > ul{
+
+		.dropdown:hover > ul{
       height: 4em;
       padding: 1em;
     }
+		/*SLIDE OUT SECTION............................*/
+		.slide-out{
+			position: fixed;
+			top: .5em;
+			right: 0px;
+			width: 250px;
+		}
+		.slide-out li{
+			display: list-item;
+			font-size: 30px;
+			margin: 0;
+
+		}
+		.slide-out > ul{
+			top: 1em;
+			left: auto;
+			height: auto;
+			padding: 20px;
+			overflow: hidden;
+			transition: all 0.7s ease;
+			background-color: teal;
+			width: 250px;
+
+		}
+		.slide-out:hover > ul{
+			height: 1em;
+			padding: 1em;
+		}
     .projects{
       display: flex;
       flex-wrap: wrap;
@@ -140,6 +165,13 @@ table {
       margin: 1em;
       padding: 1em;
     }
+		section{
+      padding-top: 0.75em;
+      margin: 1em;
+      color: white;
+      font-family: serif;
+      font-size: 1.25em;
+    }
     section{
       background-color: teal;
     }
@@ -149,9 +181,13 @@ table {
     footer{
       color: white;
     }
+		footer li{
+			display: block;
+		}
     footer li:last-child{
       background-color: gray;
     }
+
     input[type="text"]{
       padding: 1em;
       background-color: teal;
@@ -167,6 +203,13 @@ table {
     input[type="submit"]{
       background-color: gray;
     }
+		#prompt .emphasis{
+			color: blue;
+		}
+		responses.emptyInput{
+			color: green;
+			font-size: 72px;
+		}
 
     @media screen and (max-width: 414px;){
       input[type="text"],
